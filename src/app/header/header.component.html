@@ -1,11 +1,13 @@
 <header class="mdc-toolbar mdc-toolbar--fixed">
     <div class="mdc-toolbar__row">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
-          <span class="mdc-toolbar__title">Title</span>
+          <a href="#" class="material-icons mdc-toolbar__icon--menu"
+            (click)="onMenuClick()">menu</a>
+          <span class="mdc-toolbar__title">{{title}}</span>
         </section>
         <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
-          <a href="#" class="material-icons mdc-toolbar__icon--menu">settings</a>
+          <a href="#" class="material-icons mdc-toolbar__icon--menu"
+            (click)="onSettingsClick()">settings</a>
         </section>
       </div>
 </header>
